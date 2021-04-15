@@ -4,43 +4,43 @@
             "id": 1,
             "title": "Potato",
             "price": 135,
-            "image": "./images/product-1.jpg"
+            "image": "product-1.jpg"
         },
         {
             "id": 2,
             "title": "Onion",
             "price": 950,
-            "image": "./images/product-2.jpg"
+            "image": "product-2.jpg"
         },
         {
             "id": 3,
             "title": "Tomato",
             "price": 750,
-            "image": "./images/product-3.jpg"
+            "image": "product-3.jpg"
         },
         {
             "id": 4,
             "title": "Radish",
             "price": 999,
-            "image": "./images/product-4.jpg"
+            "image": "product-4.jpg"
         },
         {
             "id": 9,
             "title": "Capsicum",
             "price": 799,
-            "image": "./images/product-9.jpg"
+            "image": "product-9.jpg"
         },
         {
             "id": 10,
             "title": "Brinjal",
             "price": 3.50,
-            "image": "./images/product-10.jpg"
+            "image": "product-10.jpg"
         },
         {
             "id": 11,
             "title": "Turnip",
             "price": 2.50,
-            "image": "./images/product-7.jpg"
+            "image": "product-7.jpg"
         }
     ]
 } 
