@@ -1,65 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-  <!-- StyleSheet -->
-  <link rel="stylesheet" href="styles.css" />
-  <title>Shopping Cart Project</title>
-</head>
-
-<body>
-  <!-- Navigation -->
-  <nav class="nav">
-    <div class="nav__center container">
-      <div class="nav__logo">
-        <h1>SHOPI<span>Q</span></h1>
-      </div>
-
-      <ul class="nav__list">
-        <a href="#" class="login">Login</a>
-        <div class="cart__icon">
-          <h2>cart</h2>
-          <span class="item__total">0</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="logo">
+            <h1>ShppingCart</h1>
+          </div>
+          <div class="cart__counter">
+            <i class="fa fa-shopping-cart"></i><span id="total__counter">0</span>
+          </div>
+        </nav>
+        <div class="cart">
+            <div class="cart__items">
+                <div class="check_out"><h4>Total Ammount : $</h4><h4 class="total__cost">0</h4><button class="btn check_out_btn">Checkout</button> </div>
+            </div>
         </div>
-      </ul>
+        
+      </header>
 
-      <div class="hamburger">
-        <svg>
-          <use xlink:href="./images/sprite.svg#icon-menu"></use>
-        </svg>
+      <div class="products">
+        <div class="product__element">
+          <input type="hidden" name="" id="product__id" value="1" />
+          <img src="https://th.bing.com/th/id/Rf3b28f91d838b3ec193d6ebf8e37bf21?rik=ly4W0bU6Hsa0Hg&riu=http%3a%2f%2fweknowyourdreams.com%2fimages%2fpotato%2fpotato-12.jpg&ehk=1nQrKD8MqfSDtQ%2bEq6XWl%2fpL%2ftcjhbaUD7rYECzFrNM%3d&risl=&pid=ImgRaw" alt="" srcset="" id="image" />
+          <br><h4 class="product__name">Potato</h4>
+          <h5 class="product__price">$0.90</h5>
+          <div class="btn__add__to__cart">Add To Cart</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product__id" value="2" />
+          <img src="https://th.bing.com/th/id/Rda714a0d81fd23d9cfb758720be315cb?rik=dOJDetck1VL5aA&riu=http%3a%2f%2fweknowyourdreams.com%2fimages%2fonion%2fonion-09.jpg&ehk=G3EE%2fgFp67GomCYrLD%2bdHRQV0BiC30OZzoN5xoJNAmM%3d&risl=&pid=ImgRaw" alt="" srcset="" id="image" />
+          <br><h4 class="product__name">Onion</h4><br>
+          <h5 class="product__price">$0.80</h5>
+          <div class="btn__add__to__cart">Add To Cart</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product__id" value="3" />
+          <img src="https://www.gardeningknowhow.com/wp-content/uploads/2019/07/tomatoes.jpg" alt="" srcset="" id="image" /><br>
+          <h4 class="product__name">Tomato</h4>
+          <h5 class="product__price">$1.85</h5>
+          <div class="btn__add__to__cart">Add To Cart</div>
+        </div>
       </div>
     </div>
-  </nav>
-  <section class="products">
-    <div class="product__center">
-    </div>
-  </section>
 
-  <section class="cart__overlay">
-    <div class="cart">
-      <span class="close__cart">
-        <svg>
-          <use xlink:href="./images/sprite.svg#icon-cross"></use>
-        </svg>
-      </span>
-      <h1>Your Cart</h1>
-      <div class="cart__centent">
-      </div>
-
-      <div class="cart__footer">
-        <h3>Total: $ <span class="cart__total">0</span></h3>
-        <button class="clear__cart btn">Clear Cart</button>
-      </div>
-    </div>
-  </section>
-
-  <script src="app.js"></script>
-</body>
-
+    <script src="main.js"></script>
+  </body>
 </html>
